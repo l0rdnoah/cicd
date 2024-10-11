@@ -5,10 +5,3 @@ services:
 script:
   - docker build -t mon-app-flask .  # Remplace mon-app-flask par le nom de ton image
   - docker run --rm mon-app-flask  # Exécute l'image pour vérifier qu'elle fonctionne
-
-# Optionnel : si tu souhaites déployer l'image sur Docker Hub après le build
-deploy:
-  provider: docker
-  image: mon-utilisateur-docker/mon-app-flask  # Remplace par ton nom d'utilisateur et le nom de l'image
-  on:
-    branch: main  # Déploie uniquement à partir de la branche main
