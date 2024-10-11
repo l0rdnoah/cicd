@@ -1,0 +1,6 @@
+language: python
+python:
+  - "3.8"  # Utilise la version de Python souhaitée
+
+script:
+  - python3 test.py  # Commande pour exécuter tes tests
