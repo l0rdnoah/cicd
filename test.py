@@ -12,6 +12,7 @@ def test_subtract():
     assert subtract(0, 0) == 0
     assert subtract(-1, -1) == 0
     assert subtract(1000000, 999999) == 1
+    assert subtract(20, 10) == 10
 
 if __name__ == "__main__":
     test_add()
