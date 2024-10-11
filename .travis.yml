@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
-  - docker build -t mon-app-flask .  # Remplace mon-app-flask par le nom de ton image
-  - docker run --rm mon-app-flask  # Exécute l'image pour vérifier qu'elle fonctionne
+  - docker build -t img-test
+  - docker run --rm img-test
